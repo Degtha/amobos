@@ -239,7 +239,7 @@ nav .beranda, .Konten, .About{
     .pertama .teks-hero{
         display: flex;
         padding: 0 20px;
-        margin-top: 210px;
+        margin-top: 130px;
     }
 
     .pertama .img-hero{
@@ -594,7 +594,7 @@ section .kelima{
 
 @media (max-width: 768px) {
     .kelima{
-        margin-top: -6vh;
+        margin-top: -20vh;
     }
     .kelima img{
         width: 200px;
