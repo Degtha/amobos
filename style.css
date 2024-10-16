@@ -254,7 +254,7 @@ nav .beranda, .Konten, .About{
     .pertama{
         display: flex;
         flex-direction: column-reverse;
-        height: 100vh;
+        /* height: 100vh; */
         gap: 10px;
         padding: 0 5px;
         margin-top: -20px;
