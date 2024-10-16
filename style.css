@@ -291,9 +291,9 @@ nav .beranda, .Konten, .About{
         margin-bottom: -210px;
         align-self: center;
     }
-    /* .pertama::after{
-        bottom: -35px;
-    } */
+    .pertama::after{
+        bottom: -10px;
+    }
 }
 
 @media (max-width: 480px) {
