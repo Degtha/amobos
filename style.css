@@ -157,23 +157,6 @@ nav .beranda, .Konten, .About{
     nav .tengah p {
         display: none;
     }
-    nav .kiri .statistik button {
-        padding: 10px 10px;
-    }
-    nav .kiri .statistik button a {
-        font-size: 10px;
-    }
-    nav .kanan img {
-        width: 80px;
-        height: 80px;
-    }
-    nav .tengah i {
-        font-size: 24px;
-        /* margin-right: 10px; */
-    }
-    nav .tengah p {
-        display: none;
-    }
 }
 
 
