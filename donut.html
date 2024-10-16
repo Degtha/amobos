@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Progress Bars</title>
+    <style>
+        .circular-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px;
+        }
+
+        .circular-progress {
+            position: relative;
+            width: 150px; /* Lebar dan tinggi grafik */
+            height: 150px;
+            background: conic-gradient(
+                #4caf50 0% 0%, /* Warna bagian terisi default */
+                #ccc 0% 100%   /* Warna bagian tidak terisi */
+            );
+            border-radius: 50%;
+        }
+
+        .circular-progress::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120px; /* Ukuran lubang */
+            height: 120px; /* Tinggi lubang */
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        .circular-progress-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px; /* Ukuran teks */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="circular-container" id="circularContainer">
+        <!-- Circular progress bars will be added here dynamically -->
+    </div>
+
+    <script>
+        // Data nilai untuk masing-masing circular progress, rentang dari 0 hingga 1000
+        const data = [150, 300, 450, 700, 850, 500, 1000];
+
+        // Fungsi untuk menentukan warna berdasarkan nilai
+        function getColorByValue(value) {
+            if (value >= 1 && value <= 200) return '#4caf50'; // Hijau
+            if (value > 200 && value <= 400) return '#2196f3'; // Biru
+            if (value > 400 && value <= 600) return '#ffeb3b'; // Kuning
+            if (value > 600 && value <= 800) return '#ff9800'; // Oren
+            if (value > 800 && value <= 1000) return '#f44336'; // Merah
+            return '#ccc'; // Default jika tidak sesuai
+        }
+
+        // Fungsi untuk membuat circular progress
+        function createCircularProgress(value) {
+            const circularProgress = document.createElement('div');
+            circularProgress.className = 'circular-progress';
+
+            // Tentukan warna berdasarkan nilai
+            const color = getColorByValue(value);
+            const percentage = Math.min((value / 1000) * 100, 100); // Hitung persentase (0-100%)
+            
+            // Terapkan warna dan persentase pada background
+            circularProgress.style.background = `conic-gradient(
+                ${color} ${percentage}%, 
+                #ccc ${percentage}% 100%
+            )`;
+
+            const text = document.createElement('div');
+            text.className = 'circular-progress-text';
+            text.textContent = `${Math.round(percentage)}%`;
+
+            circularProgress.appendChild(text);
+
+            return circularProgress;
+        }
+
+        // Fungsi untuk memasukkan grafik ke dalam container
+        const circularContainer = document.getElementById('circularContainer');
+        
+        data.forEach(value => {
+            const circularProgress = createCircularProgress(value);
+            circularContainer.appendChild(circularProgress);
+        });
+    </script>
+</body>
+</html>

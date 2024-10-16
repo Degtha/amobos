@@ -1,0 +1,258 @@
+<html>
+ <head>
+  <title>Amobox's Articles</title>
+  <link rel="shortcut icon" type="x-icon" href="ASSET/amobox logo only.png">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        nav .tengah .beranda{
+            border-bottom: none;
+        }
+
+        nav .konten{
+            border-bottom: 2px solid #048B9E
+        }
+
+        
+        .title {
+            padding: 80px 0 20px 0;
+            text-align: center;
+            margin: 40px 0;
+            border-bottom: 2px solid gray;
+        }
+        .title h1 {
+            font-size: 40px;
+            color: #00c4cc;
+        }
+        .title h1 span {
+            color: #000;
+        }
+        .articles {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .article {
+            display: flex;
+            width: 80%;
+            margin: 20px 0;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 20px;
+            cursor: pointer;
+        }
+        .article a{
+            display: flex;
+            text-decoration: none;
+            color: #000;
+        }
+        .article img {
+            width: 150px;
+            height: 100px;
+            background-color: #d3d3d3;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+        .article-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .article-content h2 {
+            font-size: 18px;
+            margin: 0;
+        }
+        .article-content p {
+            color: red;
+            margin: 5px 0 0 0;
+        }
+@media (max-width: 768px) {
+    .article {
+        flex-direction: column;
+        align-items: center;
+    }
+    .article img {
+        object-fit: cover;
+        aspect-ratio: 16/9;
+        margin: 0 0 0px 0;
+        height: auto;
+    }
+    .article-content {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .article {
+        padding: 20px 0;
+    }
+    .article img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+    .article-content {
+        padding: 10px;
+    }
+    .article-content h2 {
+        font-size: 16px;
+    }
+    .article-content p {
+        font-size: 14px;
+    }
+}
+/* NAVBAR MOBILE */
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-bottom: 1px solid;
+        align-items: center;
+        overflow-x: hidden;
+        gap: 25px;
+    }
+    nav .tengah {
+        gap: 10px;
+    }
+    nav .kiri {
+        display: flex;
+        justify-content: space-between;
+                /* width: 100%; */
+    }
+    nav .kiri .statistik button {
+        padding: 10px 10px;
+    }
+    nav .kiri .statistik button a {
+        font-size: 10px;
+    }
+    nav .kanan img {
+        width: 80px;
+        height: 80px;
+    }
+    nav .tengah i {
+        font-size: 24px;
+        /* margin-right: 10px; */
+    }
+    nav .tengah p {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .kiri .statistik button {
+        padding: 10px 10px;
+    }
+    nav .kiri .statistik button a {
+        font-size: 10px;
+    }
+    nav .kanan img {
+        width: 80px;
+        height: 80px;
+    }
+    nav .tengah i {
+        font-size: 24px;
+        /* margin-right: 10px; */
+    }
+    nav .tengah p {
+        display: none;
+    }
+}
+
+  </style>
+ </head>
+ <body>
+    <nav>
+        <div class="kanan">
+            <a href="index.html"><img src="ASSET/amobox landscape logo.png" alt=""></a>
+        </div>
+        
+        <div class="tengah">
+            <div class="beranda">
+                <a href="index.html"><i class='bx bx-home'></i></a>
+                <a href="index.html"><p>BERANDA</p></a>
+            </div>
+            <div class="Konten">
+                <a href="artikel.html"><i class='bx bx-bulb' ></i></a>
+                <a href="artikel.html"><p>KONTEN</p></a>
+            </div>
+            <div class="About">
+               <a href="tentang-kami.html"> <i class='bx bx-user-circle'></i></a>
+                <a href="tentang-kami.html"><p>TENTANG KAMI</p></a>
+            </div>
+        </div>
+        
+        <div class="kiri">
+            <div class="statistik">
+                <button><a href="statistik.php">STATISTIK</a></button>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="title">
+    <h1> AMOBOX'S <span> ARTICLES </span> </h1>
+    </div>
+    <div class="articles">
+        <div class="article">
+            <a href="artikel/artikel1.html"> 
+                <img alt="Article Image" height="100" src="artikel/asset/Picture1.png" width="150"/>
+                <div class="article-content">
+                    <h2> Dampak dan Pencegahan pencemaran Udara </h2>
+                    <p> Articles </p>
+                </div>
+            </a>
+        </div>
+        <div class="article">
+            <a href="artikel/artikel2.html"> 
+                <img alt="Article Image" height="100" src="artikel/asset/Picture2.png" width="150"/>
+                <div class="article-content">
+                    <h2> Upaya Pemerintahan Mengatasi Polusi Udara di Indonesia </h2>
+                    <p> Articles </p>
+                </div>
+            </a>
+        </div>
+        <div class="article">
+            <a href="artikel/artikel3.html"> 
+                <img alt="Article Image" height="100" src="artikel/asset/Picture3.png" width="150"/>
+                <div class="article-content">
+                    <h2> Tumbuhan Penghisap Polusi </h2>
+                    <p> Articles </p>
+                </div>
+            </a>
+        </div>
+        <div class="article">
+            <a href="artikel/artikel4.html"> 
+                <img alt="Article Image" height="100" src="artikel/asset/Picture4.png" width="150"/>
+                <div class="article-content">
+                    <h2> Protokol Pencegahan Polusi Udara </h2>
+                    <p> Articles </p>
+                </div>
+            </a>
+        </div>
+        <div class="article">
+            <a href="artikel/artikel5.html"> 
+                <img alt="Article Image" height="100" src="artikel/asset/Picture5.png" width="150"/>
+                <div class="article-content">
+                    <h2> Penyebab Polusi Udara, Jenis Polutan dan Dampaknya pada Kesehatan </h2>
+                    <p> Articles </p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+        © 2024 Anggota Kelompok A2. All rights reserved.
+    </div>
+ </body>
+</html>

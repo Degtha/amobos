@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AMOBOX</title>
+        <link rel="shortcut icon" type="x-icon" href="ASSET/amobox logo only.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="dist/aos.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <style>
+            /* NAVBAR MOBILE */
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-bottom: 1px solid;
+        align-items: center;
+        overflow-x: hidden;
+        gap: 25px;
+    }
+    nav .tengah {
+        gap: 10px;
+    }
+    nav .kiri {
+        display: flex;
+        justify-content: space-between;
+                /* width: 100%; */
+    }
+    nav .kiri .statistik button {
+        padding: 10px 10px;
+    }
+    nav .kiri .statistik button a {
+        font-size: 10px;
+    }
+    nav .kanan img {
+        width: 80px;
+        height: 80px;
+    }
+    nav .tengah i {
+        font-size: 24px;
+        /* margin-right: 10px; */
+    }
+    nav .tengah p {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .kiri .statistik button {
+        padding: 10px 10px;
+    }
+    nav .kiri .statistik button a {
+        font-size: 10px;
+    }
+    nav .kanan img {
+        width: 80px;
+        height: 80px;
+    }
+    nav .tengah i {
+        font-size: 24px;
+        /* margin-right: 10px; */
+    }
+    nav .tengah p {
+        display: none;
+    }
+}
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="kanan">
+                <a href="index.html"><img src="ASSET/amobox landscape logo.png" alt=""></a>
+            </div>
+            
+            <div class="tengah">
+                <div class="beranda">
+                    <a href="index.html"><i class='bx bx-home'></i></a>
+                    <a href="index.html"><p>BERANDA</p></a>
+                </div>
+                <div class="Konten">
+                    <a href="artikel.html"><i class='bx bx-bulb' ></i></a>
+                    <a href="artikel.html"><p>KONTEN</p></a>
+                </div>
+                <div class="About">
+                   <a href="tentang-kami.html"> <i class='bx bx-user-circle'></i></a>
+                    <a href="tentang-kami.html"><p>TENTANG KAMI</p></a>
+                </div>
+            </div>
+            
+            <div class="kiri">
+                <div class="statistik">
+                    <button><a href="statistik.php">STATISTIK</a></button>
+                </div>
+            </div>
+        </nav>
+        
+    <div class="container">
+        <section class="pertama">
+            <div class="teks-hero" >
+                <h1><strong>Air <span>Monitoring</span> <br>Box System</strong></h1>
+                <p>AMOBOX (Air Monitoring Box) merupakan perangkat otomatis yang dapat memberikan informasi mengenai kualitas sekaligus pendeteksi tingkat polusi udara di lingkungan sekitar. AMOBOX dilengkapi dengan sensor yang dapat mendeteksi dan mengukur konsentrasi polutan di udara, kemudian ditampilkan dalam bentuk statistik</p>
+                <div class="statistik-hero">
+                    <i class='bx bx-home'></i>
+                    <a href="statistik.php">STATISTIK</a>
+                </div>
+            </div>
+
+            <div class="img-hero">
+                <img src="ASSET/image-hero.png" alt="">
+            </div>
+        </section>
+
+        <section class="kedua">
+            <div class="teks">
+                <h1><strong>Komponen Hardware Proyek Kami</strong></h1>
+            </div>
+            <div class="iterasi">
+                 <div class="iterasi1">
+                    <div class="card">
+                        <img src="ASSET/arduino.png" alt="">
+                        <div class="overlay">
+                            <h1>Arduino Uno R3 Wifi</h1>
+                            <p>mikrokontroler open-source yang berbasis pada mikrokontroler Atmel AVR</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="ASSET/gp2y1010au0f.jpg" alt="">
+                        <div class="overlay">
+                            <h1>⁠Dust Sensor GP2Y1010AU0F</h1>
+                            <p>sensor pendeteksi kepekatan debu yang berbasis inframerah dari sharp</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="ASSET/BME680.jpeg" alt="">
+                        <div class="overlay">
+                            <h1>⁠BME680 Module</h1>
+                            <p>modul sensor yang dapat mendeteksi suhu, kelembapan, barometric pressure, dan juga gas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="iterasi2">
+                    <div class="card">
+                        <img src="ASSET/mq135.jpeg" alt="">
+                        <div class="overlay">
+                            <h1>Sensor MQ135</h1>
+                            <p> jenis sensor kimia yang sensitif terhadap senyawa NH3, Nox, alkohol, benzol, asap (CO), CO2, dan lain – lain.</p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="ASSET/mq2.jpeg" alt="">
+                        <div class="overlay">
+                            <h1>Sensor MQ2</h1>
+                            <p>modul yang digunakan untuk mendeteksi konsentrasi gas yang sifatnya mudah terbakar.</p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="ASSET/led.png" alt="">
+                        <div class="overlay">
+                            <h1>128x64 OLED LCD Display Module</h1>
+                            <p>media display out pada module Arduino untuk menampilkan informasi secara visual.</p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="ASSET/antena.jpeg" alt="">
+                        <div class="overlay">
+                            <h1>Antena WiFi 2.4G</h1>
+                            <p>perangkat yang dirancang untuk menerima dan mengirim sinyal pada frekuensi 2,4 GHz.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="iterasi3">
+                    <div class="card">
+                        <img src="ASSET/bb.png" alt="">
+                        <div class="overlay">
+                            <h1>Breadboard</h1>
+                            <p> papan yang digunakan untuk membuat rangkaian elektronik secara sementara tanpa harus menyolder komponen-komponen tersebut.</p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="ASSET/kabel.jpeg" alt="">
+                        <div class="overlay">
+                            <h1>Kabel Jumper</h1>
+                            <p>menghubungkan komponen elektronik atau perangkat dalam rangkaian listrik atau elektronik.</p>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="ASSET/button.jpeg" alt="">
+                        <div class="overlay">
+                            <h1>Tactile Switch Push Button</h1>
+                            <p>Jenis sakelar mekanik yang memberikan umpan balik sentuhan (tactile feedback) saat ditekan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ketiga">
+            <h1>DIAGRAM SIRKUIT</h1>
+            <div class="img-p">
+                <img src="ASSET/sirkuit.jpg" alt="">
+                <p>Sistem monitoring udara ini menggunakan Arduino Pro Mini sebagai mikrokontroler utama untuk mengolah data dari beberapa sensor yang terhubung, termasuk DHT22 untuk memantau suhu dan kelembapan, MQ7/MQ135 untuk mendeteksi gas berbahaya seperti CO2, BME680 uang mengukur suhu, kelembapan, tekanan udara, dan kualitas udara (VOC), serta Sharp GP2Y1010AU0F yang mengukur konsentrasi debu di udara. Semua komponen ini terhubung melalui breadboard, dengan resistor untuk menjaga kestabilan arus. Data yang dikumpulkan oleh Arduino kemudian dikirimkan melalui ESP8266, modul Wi-Fi yang memungkinkan pengiriman informasi ke server secara real-time, sehingga pengguna dapat memantau kualitas udara dari jarak jauh.</p>
+            </div>
+        </section>
+
+        <section class="keempat">
+            <h1>Mengapa memilih sistem kami?</h1>
+            <div class="t">
+                <div class="t1">
+                    <h1>Keunggulan</h1>
+                    <p>Integrasi Arduino dengan website memungkinkan pengguna untuk melakukan pemantauan jarak jauh, dan memberikan fleksibilitas dalam pengawasan kondisi udara. Kemudahan akses data melalui platform online meningkatkan efisiensi dalam analisis dan pengambilan keputusan. Sistem ini juga memiliki potensi pengembangan yang luas, di mana sensor tambahan seperti suhu atau kualitas udara dapat diintegrasikan untuk memperluas fungsionalitasnya.</p>
+                </div>
+                <div class="t1">
+                    <h1>Tujuan</h1>
+                    <p>Sistem AMOBOX dirancang untuk pemantauan real-time kualitas udara dan gas berbahaya, mengintegrasikan data ke platform web untuk akses dan analisis efisien, meningkatkan kesadaran masyarakat tentang pentingnya kualitas udara, menyediakan data pendukung pengelolaan udara, serta mendorong tindakan berbasis data akurat untuk mengurangi polusi udara.</p>
+                </div>
+                <div class="t1">
+                    <h1>Manfaat</h1>
+                    <p>Sistem AMOBOX berperan dalam meningkatkan kualitas udara melalui pemantauan real-time, mempermudah akses data online untuk analisis yang lebih baik, meningkatkan kesadaran masyarakat tentang polusi udara dan dampak kesehatannya, mendukung kebijakan lingkungan dengan menyediakan data akurat untuk pengambilan keputusan, serta menjadi alat motivasi bagi pelajar untuk lebih aktif terlibat dalam isu-isu lingkungan melalui pemahaman yang lebih mendalam tentang kualitas udara.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="kelima">
+            <a href="statistik.php"><img src="ASSET/abcde.png" alt=""></a>
+            <p><strong>Ingin tahu lebih lanjut?</strong> Tekan gambar untuk melihat statistik</p>
+        </section>
+   </div>
+
+   <div class="footer">
+    © 2024 Anggota Kelompok A2. All rights reserved.
+   </div>
+
+
+<!-- SCRIPT JS -->
+    <script src="dist/aos.js"></script>
+</body>
+</html>
