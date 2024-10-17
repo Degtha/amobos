@@ -640,7 +640,7 @@ section .kelima{
 
 @media (max-width: 768px) {
     .kelima{
-        margin-top: -20vh;
+        margin-top: -17vh;
     }
     .kelima img{
         width: 200px;
@@ -793,6 +793,10 @@ section .kelima{
         font-weight: 700;
     }
     @media (max-width: 768px) {
+        .first_hero{
+            background-size: 60vh 60vh;
+            padding: 280px 10px;
+        }
         #sesi2::after{
             top: 412vh;    
         }
