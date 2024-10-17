@@ -292,7 +292,7 @@ nav .beranda, .Konten, .About{
         align-self: center;
     }
     .pertama::after{
-        bottom: -40px;
+        bottom: -50px;
     }
 }
 
