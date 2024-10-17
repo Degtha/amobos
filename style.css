@@ -795,8 +795,11 @@ section .kelima{
         font-weight: 700;
     }
     @media (max-width: 768px) {
+        .first h1{
+            font-size: 25px;
+        }
         .first_hero{
-            background-size: 60vh 60vh;
+            background-size: 75vh 60vh;
             padding: 280px 10px;
         }
         #sesi2::after{
@@ -806,7 +809,6 @@ section .kelima{
         .first h1{
             margin-bottom: -20px;
             z-index:10;
-            
         }
         .first_hero p{
             font-size: 16px;
