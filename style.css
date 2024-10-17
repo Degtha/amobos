@@ -224,6 +224,7 @@ nav .beranda, .Konten, .About{
 .img-hero{
     margin: 160px 0px;
     overflow-y: hidden;
+    border-radius: 15px 50px;
 }
 
 .img-hero img{
