@@ -639,9 +639,6 @@ section .kelima{
 }
 
 @media (max-width: 768px) {
-    .kelima{
-        margin-top: -15vh;
-    }
     .kelima img{
         width: 200px;
         height: 200px;
@@ -649,7 +646,7 @@ section .kelima{
 }
 @media (max-width: 480px) {
     .kelima{
-        margin-top: -15vh;
+        margin-top: -12vh;
     }
 }
 
