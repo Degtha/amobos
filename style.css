@@ -291,9 +291,9 @@ nav .beranda, .Konten, .About{
         margin-bottom: -210px;
         align-self: center;
     }
-    .pertama::after{
+    /* .pertama::after{
         bottom: -10px;
-    }
+    } */
 }
 
 @media (max-width: 480px) {
@@ -640,11 +640,16 @@ section .kelima{
 
 @media (max-width: 768px) {
     .kelima{
-        margin-top: -17vh;
+        margin-top: -15vh;
     }
     .kelima img{
         width: 200px;
         height: 200px;
+    }
+}
+@media (max-width: 480px) {
+    .kelima{
+        margin-top: -15vh;
     }
 }
 
