@@ -225,7 +225,7 @@ nav .beranda, .Konten, .About{
     margin: 160px 0px;
     overflow-y: hidden;
     border-radius: 15px 50px;
-    border: 2px solid #048B9E;
+    /* border: 2px solid #048B9E; */
     padding-bottom: 422px;
 }
 
@@ -274,9 +274,9 @@ nav .beranda, .Konten, .About{
         text-align: justify;
         width: 40vh;
     }
-    .img-hero{
+    /* .img-hero{
         padding-bottom: 0px;
-    }
+    } */
 
     .img-hero img{
         /* aspect-ratio: 1/1;
